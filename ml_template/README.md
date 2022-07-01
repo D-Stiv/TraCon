@@ -93,7 +93,7 @@ unzip data/metr-la.h5.zip -d data/
 unzip data/pems-bay.h5.zip -d data/
 
 # PEMS and METR-LA
-python main.py -d defaults.ini -c config.ini -oDP 1 -dN METR-LA PEMS-BAY
+python main.py -d defaults.ini -c config.ini -oDP 1 --dataset_name METR-LA PEMS-BAY
 
 ```
 
@@ -104,10 +104,10 @@ When you train the model, you can run:
 
 ```bash
 # Use METR-LA dataset
-python main.py -d defaults.ini -c config.ini -dN METR-LA -pCC 1 -gP 1 -pO 1 -mN HA MA VAR ST_Norm Graph_WaveNet
+python main.py -d defaults.ini -c config.ini --dataet_name METR-LA -pCC 1 -gP 1 -pO 1 -mN HA MA VAR ST_Norm Graph_WaveNet
 
 # Use PEMS-BAY dataset
-python main.py -d defaults.ini -c config.ini -dN PEMS-BAY -pCC 1 -gP 1 -pO 1 -mN HA MA VAR ST_Norm Graph_WaveNet
+python main.py -d defaults.ini -c config.ini --dataet_name PEMS-BAY -pCC 1 -gP 1 -pO 1 -mN HA MA VAR ST_Norm Graph_WaveNet
 ```
 
 Hyper-parameters can be modified in config.ini file or from command line.

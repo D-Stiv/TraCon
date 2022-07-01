@@ -1,5 +1,5 @@
 configargparse
-psycopg2
+psycopg2-binary
 torch
 sqlalchemy
 scipy
